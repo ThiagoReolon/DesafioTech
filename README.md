@@ -7,15 +7,35 @@ Desafios Técnicos - Thiago Reolon
 Este projeto consiste em um programa Python que implementa um CRUD (Create, Read, Update, Delete) utilizando uma planilha Excel para armazenar e persistir os dados de logins e senhas. Ele permite inserir novos registros, ler os registros existentes, atualizar informações de login e senha, além de excluir registros.
 
 
+Criação do ambiente de execução:
+- caso não tenha instalado o gerenciador de pacotes python:
+`sudo apt install python3-pip`
+
+- Instalação da venv python:
+`sudo apt install python3-venv`
+
+- Criação da Venv:
+`python3 -m venv venv`
+
+- Ativação da venv:
+`source venv/bin/activate`
+
 Requisitos
 Python 3.x
 Bibliotecas: pandas, openpyxl
+
 Como Usar
 Instale as dependências executando os seguintes comandos:
 
 `pip install pandas openpyxl`
 
+Estar no diretório **'DesafioTech/Sicredi/'**
+
 `python task1-crud.py`
+ou 
+Ubuntu/Debian:
+`python3 task1-crud.py`
+
 
 
 
@@ -61,31 +81,41 @@ Objetivo
 Este script em Python foi desenvolvido como parte de um desafio técnico. O objetivo é realizar o login em um site utilizando dados de login e senha armazenados em um arquivo Excel.
 
 
-Requisitos:
-Python 3.x
-Bibliotecas: pandas, selenium, openpyxl
-ChromeDriver (para automação do Chrome)
+Com a vev criada no projeto 1:
 
+- Ativação da venv:
+`source venv/bin/activate`
+
+Requisitos
+Python 3.x
+Bibliotecas: pandas, openpyxl
 
 Como Usar
-Instale as dependências necessárias executando o seguinte comando:
+Instale as dependências executando os seguintes comandos:
 
-`pip install pandas selenium openpyxl`
-
-`python task2_site.py`
-
+`pip install pandas selenium`
 
 Baixe o ChromeDriver compatível com a versão do seu navegador Chrome:
 [Download do ChromeDriver](https://googlechromelabs.github.io/chrome-for-testing/#stable)
 
 Coloque o ChromeDriver na mesma pasta do script ou defina o caminho correto para o ChromeDriver na variável service.
 
-
 Certifique-se de ter um arquivo Excel chamado logins.xlsx na mesma pasta do script. Este arquivo deve conter os dados de login e senha.
 
+Estar no diretório **'DesafioTech/Sicredi/'**
+
+`python task2_site.py`
+ou 
+Ubuntu/Debian:
+`python3 task2_site.py`
 
 
-Execute o script Python.
+Requisitos:
+Python 3.x
+Bibliotecas: pandas, selenium, openpyxl
+ChromeDriver (para automação do Chrome)
+
+
 
 O script realiza o seguinte:
 
@@ -98,7 +128,6 @@ Realiza o login em um site específico (no exemplo fornecido, o site é https://
 Captura e exibe os retornos de login (como mensagens de erro) para cada conjunto de login e senha.
 
 Fecha o navegador Chrome após a conclusão do processo.
-
 
 
 
@@ -120,22 +149,37 @@ Descrição
 Este projeto realiza uma chamada a uma API HTTPS de um site de testes e salva os dados obtidos em um arquivo Excel.
 
 
+
+Com a vev criada no projeto 1 e 2:
+
+- Ativação da venv:
+`source venv/bin/activate`
+
+Instalação
+Para instalar as bibliotecas necessárias, execute o seguinte comando:
+
+`pip install requests`
+
+Estar no diretório **'DesafioTech/Sicredi/'**
+
+`python task3_api.py`
+ou 
+Ubuntu/Debian:
+`python3 task3_api.py`
+
+
+
 Requisitos:
 Python 3.x
 Bibliotecas:
 requests
 pandas
-Instalação
-Para instalar as bibliotecas necessárias, execute o seguinte comando:
 
-`pip install requests pandas`
 
-`python task3_api.py`
 
 Clone este repositório para sua máquina local.
-Execute o script api_to_excel.py:
 
-python api_to_excel.py
+
 Estrutura do Código
 Funções
 `get_api()`
