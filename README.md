@@ -15,7 +15,7 @@ Instale as dependências executando os seguintes comandos:
 
 `pip install pandas openpyxl`
 
-`python main.py`
+`python task1-crud.py`
 
 
 
@@ -72,6 +72,8 @@ Instale as dependências necessárias executando o seguinte comando:
 
 `pip install pandas selenium openpyxl`
 
+`python task2_site.py`
+
 
 Baixe o ChromeDriver compatível com a versão do seu navegador Chrome:
 [Download do ChromeDriver](https://googlechromelabs.github.io/chrome-for-testing/#stable)
@@ -127,6 +129,8 @@ Instalação
 Para instalar as bibliotecas necessárias, execute o seguinte comando:
 
 `pip install requests pandas`
+
+`python task3_api.py`
 
 Clone este repositório para sua máquina local.
 Execute o script api_to_excel.py:
