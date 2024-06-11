@@ -25,11 +25,11 @@ Python 3.x
 Bibliotecas: pandas, openpyxl
 
 Como Usar
-Instale as dependências executando os seguintes comandos:
+- Instale as dependências executando os seguintes comandos:
 
 `pip install pandas openpyxl`
 
-Estar no diretório **'DesafioTech/Sicredi/'**
+- Estar no diretório **'DesafioTech/Sicredi/'**
 
 `python task1-crud.py`
 ou 
@@ -53,15 +53,11 @@ Siga as opções do menu para interagir com o programa:
 
 **Exemplo de Uso**
 
-Para inserir um novo registro, selecione a opção 1 no menu e siga as instruções para inserir o login e senha.
-
-Para ler os registros existentes, selecione a opção 2.
-
-Para atualizar um registro, selecione a opção 3, escolha o número do registro que deseja atualizar e insira as novas informações de login e senha.
-
-Para deletar um registro, selecione a opção 4, escolha o número do registro que deseja deletar.
-
-Para sair do programa, selecione a opção 5.
+- Para inserir um novo registro, selecione a opção 1 no menu e siga as instruções para inserir o login e senha.
+- Para ler os registros existentes, selecione a opção 2.
+- Para atualizar um registro, selecione a opção 3, escolha o número do registro que deseja atualizar e insira as novas informações de login e senha.
+- Para deletar um registro, selecione a opção 4, escolha o número do registro que deseja deletar.
+- Para sair do programa, selecione a opção 5.
 
 
 
@@ -81,7 +77,7 @@ Objetivo
 Este script em Python foi desenvolvido como parte de um desafio técnico. O objetivo é realizar o login em um site utilizando dados de login e senha armazenados em um arquivo Excel.
 
 
-Com a vev criada no projeto 1:
+- Com a vev criada no projeto 1:
 
 - Ativação da venv:
 `source venv/bin/activate`
@@ -91,18 +87,18 @@ Python 3.x
 Bibliotecas: pandas, openpyxl
 
 Como Usar
-Instale as dependências executando os seguintes comandos:
+- Instale as dependências executando os seguintes comandos:
 
 `pip install pandas selenium`
 
 Baixe o ChromeDriver compatível com a versão do seu navegador Chrome:
 [Download do ChromeDriver](https://googlechromelabs.github.io/chrome-for-testing/#stable)
 
-Coloque o ChromeDriver na mesma pasta do script ou defina o caminho correto para o ChromeDriver na variável service.
+- Coloque o ChromeDriver na mesma pasta do script ou defina o caminho correto para o ChromeDriver na variável service.
 
-Certifique-se de ter um arquivo Excel chamado logins.xlsx na mesma pasta do script. Este arquivo deve conter os dados de login e senha.
+- Certifique-se de ter um arquivo Excel chamado logins.xlsx na mesma pasta do script. Este arquivo deve conter os dados de login e senha.
 
-Estar no diretório **'DesafioTech/Sicredi/'**
+- Estar no diretório **'DesafioTech/Sicredi/'**
 
 `python task2_site.py`
 ou 
@@ -119,15 +115,11 @@ ChromeDriver (para automação do Chrome)
 
 O script realiza o seguinte:
 
-Carrega os dados de login e senha do arquivo Excel logins.xlsx utilizando a biblioteca pandas.
-
-Utiliza a biblioteca selenium para automatizar o navegador Chrome.
-
-Realiza o login em um site específico (no exemplo fornecido, o site é https://www.fbb.org.br/pt-br/ra/conteudo/teste-login) usando os dados fornecidos no arquivo Excel.
-
-Captura e exibe os retornos de login (como mensagens de erro) para cada conjunto de login e senha.
-
-Fecha o navegador Chrome após a conclusão do processo.
+- Carrega os dados de login e senha do arquivo Excel logins.xlsx utilizando a biblioteca pandas.
+- Utiliza a biblioteca selenium para automatizar o navegador Chrome.
+- Realiza o login em um site específico (no exemplo fornecido, o site é https://www.fbb.org.br/pt-br/ra/conteudo/teste-login) usando os dados fornecidos no arquivo Excel.
+- Captura e exibe os retornos de login (como mensagens de erro) para cada conjunto de login e senha.
+- Fecha o navegador Chrome após a conclusão do processo.
 
 
 
@@ -150,13 +142,13 @@ Este projeto realiza uma chamada a uma API HTTPS de um site de testes e salva os
 
 
 
-Com a vev criada no projeto 1 e 2:
+- Com a vev criada no projeto 1 e 2:
 
 - Ativação da venv:
 `source venv/bin/activate`
 
 Instalação
-Para instalar as bibliotecas necessárias, execute o seguinte comando:
+- Para instalar as bibliotecas necessárias, execute o seguinte comando:
 
 `pip install requests`
 
@@ -183,7 +175,7 @@ Clone este repositório para sua máquina local.
 Estrutura do Código
 Funções
 `get_api()`
-Esta função realiza uma chamada GET para a URL da API e retorna os dados em formato JSON se a resposta for bem-sucedida (código de status 200). Caso contrário, imprime uma mensagem de erro e retorna None.
+- Esta função realiza uma chamada GET para a URL da API e retorna os dados em formato JSON se a resposta for bem-sucedida (código de status 200). Caso contrário, imprime uma mensagem de erro e retorna None.
 
 ```python
 def get_api():
@@ -201,7 +193,7 @@ def get_api():
         return None
 save_to_excel(retorno)
 ```
-Esta função recebe os dados retornados pela função get_api(), converte-os para um DataFrame do pandas e salva em um arquivo Excel chamado resultadoapi.xlsx no diretório atual.
+- Esta função recebe os dados retornados pela função get_api(), converte-os para um DataFrame do pandas e salva em um arquivo Excel chamado resultadoapi.xlsx no diretório atual.
 
 ```python
 def save_to_excel(retorno):
@@ -210,7 +202,7 @@ def save_to_excel(retorno):
 
 ```
 Execução Principal
-O código principal executa a função get_api() e, se os dados forem obtidos com sucesso, chama a função save_to_excel() para salvar os dados em um arquivo Excel. Caso contrário, imprime uma mensagem de erro.
+- O código principal executa a função get_api() e, se os dados forem obtidos com sucesso, chama a função save_to_excel() para salvar os dados em um arquivo Excel. Caso contrário, imprime uma mensagem de erro.
 
 ```python
 retorno = get_api()
