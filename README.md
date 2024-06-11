@@ -21,15 +21,11 @@ Instale as dependências executando os seguintes comandos:
 
 Siga as opções do menu para interagir com o programa:
 
-```
+```python
 1 - Inserir registro
-
 2 - Ler registros
-
 3 - Atualizar registros
-
 4 - Deletar registros
-
 5 - Sair
 ```
 
@@ -141,7 +137,7 @@ Funções
 `get_api()`
 Esta função realiza uma chamada GET para a URL da API e retorna os dados em formato JSON se a resposta for bem-sucedida (código de status 200). Caso contrário, imprime uma mensagem de erro e retorna None.
 
-```
+```python
 def get_api():
     url = 'https://jsonplaceholder.typicode.com/posts'
     try:
@@ -159,7 +155,7 @@ save_to_excel(retorno)
 ```
 Esta função recebe os dados retornados pela função get_api(), converte-os para um DataFrame do pandas e salva em um arquivo Excel chamado resultadoapi.xlsx no diretório atual.
 
-```
+```python
 def save_to_excel(retorno):
     df = pd.DataFrame(retorno)
     df.to_excel(os.path.join(str(os.getcwd()), 'resultadoapi.xlsx'), index=False)
@@ -168,7 +164,7 @@ def save_to_excel(retorno):
 Execução Principal
 O código principal executa a função get_api() e, se os dados forem obtidos com sucesso, chama a função save_to_excel() para salvar os dados em um arquivo Excel. Caso contrário, imprime uma mensagem de erro.
 
-```
+```python
 retorno = get_api()
 if retorno:
     save_to_excel(retorno)
